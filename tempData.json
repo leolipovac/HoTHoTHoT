@@ -1,0 +1,51 @@
+{
+    "listTemp":[{
+        "insideTemp":11,
+        "minTempInsideTemp":8,
+        "maxTempInsideTemp":16,
+        "outsideTemp":20,
+        "minTempOutSide":17,
+        "maxTempOutSide":26,
+        "day":1
+    },
+    {
+        "insideTemp":10,
+        "minTempInsideTemp":23,
+        "maxTempInsideTemp":28,
+        "outsideTemp":23,
+        "minTempOutSide":18,
+        "maxTempOutSide":25,
+        "day":2
+        
+    },
+    {
+        "insideTemp":10,
+        "minTempInsideTemp":33,
+        "maxTempInsideTemp":38,
+        "outsideTemp":21,
+        "minTempOutSide":18,
+        "maxTempOutSide":23,
+        "day":3
+    },
+    {
+        "insideTemp":38,
+        "minTempInsideTemp":34,
+        "maxTempInsideTemp":42,
+        "outsideTemp":34,
+        "minTempOutSide":28,
+        "maxTempOutSide":38,
+        "day":4
+        
+    },
+    {
+        "insideTemp":14,
+        "minTempInsideTemp":12,
+        "maxTempInsideTemp":17,
+        "outsideTemp":16,
+        "minTempOutSide":28,
+        "maxTempOutSide":38,
+        "day":5
+    }
+
+    ]
+}

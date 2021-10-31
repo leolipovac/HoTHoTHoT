@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="structure.css" />
+	<link rel="stylesheet" href="design.css" />
+	<link rel="stylesheet" href="RespDesign.css" />
+	<link rel="stylesheet" href="RespStruct.css"/>
+	<link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="logo.ico">
+	<title>HotHotHot</title>
+	<script src="https://kit.fontawesome.com/16e6c0d79e.js" crossorigin="anonymous"></script>
+	<script src="alert.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+	<header>
+		
+	
+		<!-- Navigation -->
+		<nav>
+			<h1 class="logo">HoT HoT HoT</h1>
+			<ul class="desktop-list">
+				<li><a href="Accueil.html"><strong>Températures & Statistiques</strong></a></li>
+				<li><a href="Paramètres.html"><strong>Paramètres</strong></a></li>
+				<li><a href="Compte.html"><strong>Compte Utilisateur</strong></a></li>
+			</ul>
+
+		<!-- Navigation Mobile -->	
+
+			<ul class="mobile-list">
+				<li><a href="Accueil.html"><i class="fas fa-home"></i></a></li>
+				<li><a href="Paramètres.html"><i class="fas fa-sliders-h"></i></a></li>
+				<li ><a href="Compte.html"><i class="fas fa-user"></i></a></li>
+			</ul>
+
+		</nav>
+
+
+	</header>
+		<section class="background">
+			<h2 class="h2Ensemble2Page">Ensemble de Page</h2>
+			<section class="Container">
+				<h2 class="h2Container">Information</h2>
+				<!-- Température Intérieure -->
+				<section class="tempInterieur">
+					<h3 class="h3Temp">Température intérieure</h3>
+					<h4 id="tempInt">28°C</h4>
+					<p id="h5minmax">Min 24°C Max 29°C</p> 
+					<p id="pTemp">Baissez le chauffage !</p>
+				</section>
+				<!-- Température Extérieure -->
+				<section class="tempExterieur">
+					<h3 class="h3Temp">Température Extérieur</h3>
+					<p id="tempExt">36°C</p>
+					<p id="h5minmaxV2">Min 34°C Max 36°C</p> 
+					<p id="pTempE">Hot Hot Hot !</p>
+				</section>
+				<!-- Statistiques Intérieur -->
+				<section class="statistiquesInterieur">
+					<h3>Statistiques Intérieur</h3>
+					<canvas id="Chart"></canvas>
+				</section>
+				<!-- Statistiques Extérieur -->
+				<section class="statistiquesExterieur">
+					<h3>Statistiques Extérieur</h3>
+					<canvas id="myChart"></canvas>
+				</section>
+			</section>
+		</section>
+
+		<script>  
+
+			var ctx = document.getElementById('myChart').getContext('2d');
+		
+			var label = [
+				'Lundi',
+				'Mardi',
+				'Mecredi',
+				'Jeudi',
+				'Vendredi',
+				'Samedi',
+			  ];
+			var myChart = new Chart(ctx, {
+		
+				type: 'line',
+				data: {
+					labels: label,
+				datasets: [{
+				  label: 'Températures',
+				  backgroundColor: 'rgb(255, 99, 132)',
+				  borderColor: 'rgb(255, 99, 132)',
+				  data: [0, 10, 5, 2, 20, 30, 45],
+				}],
+		
+			
+			  },
+		});
+		
+		</script>
+
+		<script>  
+
+			var ctx = document.getElementById('Chart').getContext('2d');
+
+			var label = [
+				'Lundi',
+				'Mardi',
+				'Mecredi',
+				'Jeudi',
+				'Vendredi',
+				'Samedi',
+			];
+			var myChart = new Chart(ctx, {
+
+				type: 'line',
+				data: {
+					labels: label,
+				datasets: [{
+				label: 'Températures',
+				backgroundColor: 'rgb(255, 99, 132)',
+				borderColor: 'rgb(255, 99, 132)',
+				data: [15, 18, 14, 23, 26, 24, 30],
+				}],
+
+			
+			},
+		});
+
+		</script>
+
+</body>
+
+</html>

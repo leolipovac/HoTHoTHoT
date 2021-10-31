@@ -1,0 +1,174 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	display: flex; /* Active flexbox */
+	flex-wrap: wrap; /* Permet de modifier les items en fonction de la taille de la fenêtre */
+}
+header
+{
+	height: 80px;
+	flex-basis: 100%;
+}
+h1.logo
+{
+ display: inline;
+ line-height: 80px;
+ padding: 0 30px;
+}
+nav ul
+{
+	float: right;
+	margin-right: 15px;
+}
+nav ul li 
+{
+	line-height: 80px;
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+	padding: 10px;
+}
+.background
+{
+	top:80px;
+	bottom: 159px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.Container
+{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1300px;
+	width: 95%;
+	min-height: 350px;
+	height: 95%;
+	margin: 15px auto 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.h2Container, .h2Ensemble2Page
+{
+	position: absolute;
+	top: -5000px;
+}
+.h3Temp
+{
+	flex: 1 1 100%;
+	margin-bottom: 20px;
+}
+#pTemp
+{
+	flex: 1 1 100%;
+	padding: 5px;
+}
+#pTempE
+{
+	flex: 1 1 100%;
+	padding: 5px;
+}
+#tempInt,#tempExt{
+	flex: 6;
+	align-self: center;
+	border-right: 1px black solid;
+}
+
+#h5minmax, #h5minmaxV2
+{
+	flex: 4;
+	align-self: center;
+	font-size: 19px;
+	line-height: 2;
+}
+.tempInterieur,.tempExterieur,.statistiquesInterieur,.statistiquesExterieur
+{
+	border-radius: 20px;
+	width: 325px;
+	height:225px;
+	margin:70px;
+	padding-top: 15px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.h3Temp
+{
+	margin-top: 5px;
+}
+#pTempE
+{
+	margin-top: 45px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	margin-bottom: 1px;
+	padding-top: 6px;
+}
+#pTemp
+{
+	margin-top: 45px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	margin-bottom: 1px;
+	padding-top: 6px;
+}
+
+	/*Page User*/
+
+
+.InformationUser
+{
+	
+	text-align: left !important;
+	padding: 20px;
+	margin-top: 20px;;
+	max-width:300px;
+	margin-bottom: 30px;
+}
+.mobile-list
+{
+	display:none;
+}
+h3
+{
+	flex: 1 1 100%;
+}
+.ImageUser{
+	width: 100px;
+	height: 100px;
+	margin:15px;
+
+}
+.PhotoNom{
+	width: 100%;
+	margin-top:50px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Information{
+	text-align: center !important;
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+.infobis{
+	padding-top: 10px;
+	padding-top: 10px;
+}
+button{
+	padding: 8px;
+	align-self: center !important;
+	border-radius: 20px;
+	font-size: 15px;
+	
+}
