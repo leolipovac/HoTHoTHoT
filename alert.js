@@ -63,7 +63,6 @@ function getRandomInt(max) {
         }
         else if (newInsideTemp > 12 && newInsideTemp < 22) {
             document.getElementById("pTemp").textContent = ' ';
-            console.log(pTempI);
         }
         else if (newInsideTemp < 12) {
             document.getElementById("pTemp").textContent = 'Montez le chauffage ou mettez un pull !';
