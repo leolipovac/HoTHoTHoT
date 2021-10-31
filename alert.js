@@ -58,7 +58,7 @@ function getRandomInt(max) {
         
         if (newInsideTemp > 22 && newInsideTemp < 50) {
             document.getElementById("pTemp").textContent = ' Baissez le chauffage ! ';
-            console.log(pTempI);
+          
 
         }
         else if (newInsideTemp > 12 && newInsideTemp < 22) {
@@ -66,15 +66,15 @@ function getRandomInt(max) {
         }
         else if (newInsideTemp < 12) {
             document.getElementById("pTemp").textContent = 'Montez le chauffage ou mettez un pull !';
-            console.log(pTempI);
+          
         }
         else if (newInsideTemp < 0) {
             document.getElementById("pTemp").textContent = 'canalisations gelées, appelez SOS plombier - et mettez un bonnet !';
-            console.log(pTempI);
+          
         }
         else {
             document.getElementById("pTemp").textContent = "Appelez les pompiers ou arrêtez votre barbecue !";
-            console.log(pTempI);
+  
     
         }
         
